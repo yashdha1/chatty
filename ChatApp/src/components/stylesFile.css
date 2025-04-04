@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+/* 
+welcome page with login and signup options  */ 
+/* Updated stylesFile.css */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    text-align: center;
+  }
+  
+  .welcome-inner-box{
+    background-color: white;
+    border-radius:15px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .img-welcome {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    padding: 50px;
+    padding-bottom: 30px;
+  }
+  
+  .welcome-buttons {
+    display: flex;
+    gap: 40px;
+    padding-bottom:25px ;
+  }
+  
+  .welcome-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6a11cb;
+    background-color: white;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .welcome-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+
+/*   
+
+  main box of body starts here 
+  
+  loginpage nad signup page is at bottom 
+
+*/
+
+.mainBox {
+    height: 95vh;
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1%;
+    display: flex;
+}
+
+.sideBar {
+    height: 100%;
+    width: 30%;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    flex-direction: column;
+}
+
+.workArea {
+    width: 70%; /* Adjusted to take up the remaining space */
+
+    display: flex;
+    flex-direction: column;
+
+    background-color:  rgb(227, 227, 227);
+}
+
+
+.img-box{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+} 
+
+.img-logo{
+    height: 40%;
+}
+
+/* group  creating icon  */
+.groupCreate {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.group-container {
+    margin-top: 6rem;
+    width: 60%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.group-container:hover {
+    border-color: #666;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.in-group {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.in-group:focus {
+    border-color: #999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.in-groupicon {
+    margin-left: 10px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.in-groupicon:hover {
+    color: #333;
+}
+
+
+/* login css */
+/* Complete css of the Login Page */  
+.loginPage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+.login-inner {
+    width: 50%;
+    max-width: 400px;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-logo {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-logo img {
+    max-height: 80px;
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #999;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+.signin-else , .login-else{
+    text-align: center;
+    text-decoration: underline;
+    color: #0056b3;
+    cursor: pointer;
+}
+
+/* Onlinee users css  */
+/*css foe the groups and users online*/
+.onlineContainer {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.onlineUserHeader {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+.users , .groups{
+    display: flex;
+    flex-direction: column;
+}
+
+.user , .group{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #555;
+}
+
+.user:hover , .group:hover {
+    background-color: #e8e8e8;
+}
+
+
+/* 
+search box of the online users  */
+.searchFieldUser {
+    width: 100%;
+    margin-bottom: 15px;
+}
+/* search in the users  */
+.onlineListUser {
+    max-height: 200px;
+    overflow-y: auto;
+}
+/* groups fiels search */
+.searchFieldGroups {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.onlineListGroup {
+    max-height: 200px;
+    overflow-y: auto;
+}
+

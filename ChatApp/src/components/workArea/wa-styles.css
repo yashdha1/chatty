@@ -1,0 +1,136 @@
+/* wa header css  */
+.headerWa {
+    display: grid;
+    height: 3rem;
+    grid-template-columns: 3.2rem 1fr 3rem; /* Adjusted column sizes */
+    grid-template-rows: auto; /* Simplified rows */
+    column-gap: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 5px ;
+    margin-top: 5px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: white;
+}
+
+.icon {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    margin-left: 10px; /* Adjust margin to move the icon to the right */
+}
+
+.name {
+    grid-area: 1 / 2 / 2 / 3;
+    font-weight: 500;
+    align-self: center;
+    font-size: 2rem; /* Adjusted font size for better alignment */
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.deleteButton {
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+/* input box css */
+
+.input-wa{
+    height: 3rem;
+    margin: 10px;
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    display: flex;
+}
+.inputBox{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+.sendButton{
+    width: 10%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: aqua;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* chatArea csss */
+/* General chat area styling *//* Chat area styling */
+.chatarea-wa {
+    flex: 1;
+    border-radius: 10px;
+    background-color: #fefefe;
+    color: #000;
+    margin: 10px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    overflow: scroll;
+    scrollbar-width: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+/* User message bubble styling */
+.senderBubble {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+.senderBox {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    background-color:aqua;
+}
+
+/* User message box styling */
+.userBubble {
+    padding: 15px;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    justify-content: flex-end;
+}
+.userBox {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    background-color:#d9d9d9;
+}
+
+.sent-time , .user-time { 
+    font-size: 10px ; 
+    display: flex;
+    justify-content: flex-end;
+}

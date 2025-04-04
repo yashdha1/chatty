@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    border: 0; 
+}
+#outer-box{
+    background-color: #ccdacc;
+    min-height: 100vh ; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
